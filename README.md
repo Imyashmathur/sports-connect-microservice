@@ -1,63 +1,71 @@
-<h1 align="center" id="title">🚀 Unleash the Power of Scalable Microservices: A Symphony of Spring Technologies 🎶</h1>
+# 🚀 Sports Connect Microservices Platform
 
-<p align="center">
-    <img src="https://socialify.git.ci/imrohit68/sports-app-microservies/image?language=1&name=1&owner=1&theme=Light" alt="project-image">
-</p>
+A cloud-native microservices application built using Spring Boot and Spring Cloud ecosystem.
 
----
+## Architecture
 
-## **📌 Introduction**
-In a world where scalability, security, and resilience are paramount, this microservices project **breaks free from monolithic constraints** to deliver a **truly dynamic and robust system**.  
+The platform consists of:
 
-Built with **Spring Boot and a suite of cloud-native technologies**, this architecture is a **well-orchestrated system** of independent, **containerized services** communicating effortlessly.  
+- API Gateway
+- Eureka Service Registry
+- Config Server
+- User Service
+- Event Service
+- Message Service
+- RabbitMQ
+- Keycloak Authentication
+- Grafana Monitoring
+- Prometheus Metrics
+- Loki Logging
+- Tempo Distributed Tracing
 
-⚡ **Key Features at a Glance:**  
-✔ **Highly Scalable & Portable** – Runs smoothly in containerized environments.  
-✔ **Secure Authentication** – Implements **Keycloak + OAuth2** for authentication.  
-✔ **Resilient Services** – Powered by **Resilience4j** to handle failures.  
-✔ **Real-time Observability** – Tracing and monitoring via **Grafana, Prometheus, Tempo & Loki**.  
-✔ **Event-Driven Architecture** – Using **RabbitMQ & Spring Cloud Function** for asynchronous processing.  
+## Features
 
----
+- Service Discovery using Eureka
+- Centralized Configuration Management
+- API Gateway Routing
+- OAuth2 Authentication with Keycloak
+- Event Driven Communication using RabbitMQ
+- Fault Tolerance using Resilience4j
+- Distributed Tracing and Monitoring
+- Containerized Deployment using Docker
 
-## **📸 Project Screenshots**
-🔹 **System Architecture & Features:**  
-<img src="https://github.com/imrohit68/project-images/blob/main/ss1.jpg?raw=true">
+## Tech Stack
 
-🔹 **Monitoring & Observability:**  
-<img src="https://github.com/imrohit68/project-images/blob/main/ss2.jpg?raw=true">
+- Java 17
+- Spring Boot
+- Spring Cloud
+- Spring Security
+- Keycloak
+- RabbitMQ
+- Docker
+- Grafana
+- Prometheus
+- Loki
+- Tempo
 
----
+## Running the Project
 
-## **🚀 Key Features**
-This project is designed to tackle **real-world challenges** with **modern microservice practices**:
+```bash
+docker-compose up -d
+```
 
-✅ **Event-Driven Architecture** – Asynchronous communication for high efficiency.  
-✅ **Advanced Monitoring & Observability** – Track logs, metrics, and traces in real-time.  
-✅ **Scalability & High Availability** – Designed to handle growing traffic seamlessly.  
-✅ **Enterprise-Grade Security** – Secure authentication & authorization with **OAuth2 & Keycloak**.  
-✅ **Fault Tolerance** – **Resilience4j** ensures graceful failure handling.  
-✅ **Cloud-Native Configuration Management** – **Spring Cloud Config** manages service settings dynamically.  
+Start services in order:
 
----
+1. Config Server
+2. Eureka Server
+3. API Gateway
+4. User Service
+5. Event Service
+6. Message Service
 
-## **🛠️ Tech Stack & Tools**
-This project leverages industry-leading **Spring technologies** and **monitoring tools**:
+## Learning Objectives
 
-🔹 **Spring Cloud Config** – Dynamic configuration management.  
-🔹 **Spring Netflix Eureka** – Service discovery & load balancing.  
-🔹 **Spring Cloud Gateway** – API Gateway for routing and security.  
-🔹 **Spring Cloud Function** – Serverless computing with event-driven architecture.  
-🔹 **Keycloak + OAuth2** – Secure authentication & authorization.  
-🔹 **RabbitMQ** – Message-driven event processing.  
-🔹 **Resilience4j** – Fault tolerance & circuit breaking.  
-🔹 **Grafana & Prometheus** – Real-time monitoring & metrics visualization.  
-🔹 **Tempo & Loki** – Distributed tracing and centralized logging.  
+This project demonstrates production-style microservice architecture including:
 
----
-
-## **💡 Why This Matters?**
-This **microservices architecture** is **not just a concept**—it’s built for **real-world deployment**.  
-It seamlessly integrates **security, observability, resilience, and scalability**—ensuring your services are **production-ready from day one**.
-
-Let’s **future-proof** applications with **event-driven, cloud-native, and highly available microservices**! 🚀  
+- Service Discovery
+- API Gateway Pattern
+- Event Driven Architecture
+- Distributed Monitoring
+- Security and Authentication
+- Fault Tolerance
